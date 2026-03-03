@@ -1,0 +1,3 @@
+# ignore jupyterbook build outputs
+materi-pendat/_build
+
