@@ -31,9 +31,9 @@ Berikut tiga tugas utama pada Pertemuan 3 beserta status penyelesaiannya:
 | 3 | **Lakukan Pengukuran Jarak pada Data Campuran** tersebut | ✅ Selesai | 4 metrik jarak diterapkan di Orange pada data Loan Prediction — lihat **Section 3.15.5** |
 ```
 
-> **File Orange Workflow:** {download}`LoanPrediction.ows <DataCampuranPertemuan3/Loan Prediction Problem Dataset/LoanPrediction.ows>`
+> **File Orange Workflow:** {download}`LoanPrediction.ows <DataCampuranPertemuan3/Loan_Prediction_Problem_Dataset/LoanPrediction.ows>`
 >
-> **File SQL Database:** {download}`Loan.sql <DataCampuranPertemuan3/Loan Prediction Problem Dataset/Loan.sql>`
+> **File SQL Database:** {download}`Loan.sql <DataCampuranPertemuan3/Loan_Prediction_Problem_Dataset/Loan.sql>`
 
 ---
 
@@ -232,9 +232,9 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Pairplot Iris Dataset](Assets/Pertemuan_2/Pairplot.png)
+![Pairplot Iris Dataset](Assets/Pairplot.png)
 
-![Scatter Plot Petal](Assets/Pertemuan_2/ScatterPlotPetal.png)
+![Scatter Plot Petal](Assets/ScatterPlotPetal.png)
 
 ---
 
@@ -553,7 +553,7 @@ Dataset **Loan Prediction** dipilih sebagai data campuran (*mixed-type*) untuk t
 Dataset berisi data pengajuan pinjaman bank yang digunakan untuk memprediksi **apakah pinjaman akan disetujui atau tidak**. Terdapat **614 baris** dan **12 kolom**.
 
 ```python
-df_loan = pd.read_csv("DataCampuranPertemuan3/Loan Prediction Problem Dataset/Loan.csv")
+df_loan = pd.read_csv("DataCampuranPertemuan3/Loan_Prediction_Problem_Dataset/Loan.csv")
 df_loan.head()
 ```
 
@@ -611,7 +611,7 @@ Data Loan Prediction juga dimuat langsung dari database PostgreSQL menggunakan w
 | **Table** | `loan_prediction` |
 | **Total baris** | 200 |
 
-![Koneksi SQL Table ke PostgreSQL LoanPrediction](DataCampuranPertemuan3/Loan%20Prediction%20Problem%20Dataset/PostgreeKeOrange.png)
+![Koneksi SQL Table ke PostgreSQL LoanPrediction](DataCampuranPertemuan3/Loan_Prediction_Problem_Dataset/PostgreeKeOrange.png)
 
 > **Gambar:** Widget SQL Table Orange berhasil terhubung ke database PostgreSQL `LoanPrediction` dan memuat tabel `loan_prediction` (200 baris). Tombol Connect berhasil, dan data tersedia untuk dialirkan ke pipeline pengukuran jarak.
 
@@ -646,7 +646,7 @@ Karena data Loan Prediction bersifat **mixed-type**, tidak ada satu metrik yang 
 - **Hamming** menghitung perbedaan kategorikal — ideal untuk status pernikahan, pendidikan, pekerjaan, riwayat kredit, dan area properti.
 ```
 
-![Workflow Orange — Pengukuran Jarak Data Campuran Loan Prediction](DataCampuranPertemuan3/Loan%20Prediction%20Problem%20Dataset/PostgreeKeOrange.png)
+![Workflow Orange — Pengukuran Jarak Data Campuran Loan Prediction](DataCampuranPertemuan3/Loan_Prediction_Problem_Dataset/PostgreeKeOrange.png)
 
 > **Gambar:** Workflow `LoanPrediction.ows` di Orange Data Mining. Terdapat dua sumber data: **CSV File Import** (`Loan.csv`) dan **SQL Table** / database PostgreSQL `LoanPrediction`, tabel `loan_prediction` (200 baris), masing-masing dialirkan ke **Data Table** lalu ke empat widget **Distance** (Euclidean, Manhattan, Spearman, Hamming) → **Distance Matrix** → **Save Distance Matrix**.
 
@@ -657,12 +657,12 @@ File workflow Orange dan script SQL yang digunakan untuk tugas ini dapat diunduh
 ```{admonition} 📥 Download File
 :class: note
 **Orange Workflow:**
-{download}`LoanPrediction.ows — Workflow Pengukuran Jarak Mixed-Type <DataCampuranPertemuan3/Loan Prediction Problem Dataset/LoanPrediction.ows>`
+{download}`LoanPrediction.ows — Workflow Pengukuran Jarak Mixed-Type <DataCampuranPertemuan3/Loan_Prediction_Problem_Dataset/LoanPrediction.ows>`
 
 File ini berisi seluruh pipeline Orange: dari loading data CSV (`Loan.csv`) / SQL (`loan_prediction` @ `LoanPrediction`), hingga perhitungan Euclidean, Manhattan, Spearman, dan Hamming Distance Matrix.
 
 **SQL Database:**
-{download}`Loan.sql — Script SQL Pembuatan Database & Tabel Loan Prediction <DataCampuranPertemuan3/Loan Prediction Problem Dataset/Loan.sql>`
+{download}`Loan.sql — Script SQL Pembuatan Database & Tabel Loan Prediction <DataCampuranPertemuan3/Loan_Prediction_Problem_Dataset/Loan.sql>`
 
 File ini berisi script SQL untuk membuat database `LoanPrediction`, tabel `loan_prediction`, dan mengimpor data pengajuan pinjaman ke PostgreSQL.
 ```

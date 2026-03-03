@@ -122,7 +122,7 @@ plt.xticks(rotation=0)
 plt.show()
 ```
 
-![Bar Chart Species](Assets/Pertemuan_2/Bar_Chart.png)
+<!-- image missing, original Bar Chart not available -->
 
 # **Histogram semua fitur numerik**
 
@@ -137,7 +137,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Histogram Fitur](Assets/Pertemuan_2/Histogram.png)
+![Histogram Fitur](Assets/Histogram.png)
 
 # **Boxplot semua fitur numerik (deteksi outlier)**
 
@@ -155,7 +155,7 @@ ax.grid(True)
 plt.show()
 ```
 
-![Boxplot Semua Fitur](Assets/Pertemuan_2/Boxplot.png)
+![Boxplot Semua Fitur](Assets/Boxplot.png)
 
 # **Scatter plot petal_length vs petal_width**
 
@@ -173,7 +173,7 @@ plt.legend(title="Species")
 plt.show()
 ```
 
-![Scatter Petal](Assets/Pertemuan_2/ScatterPlotPetal.png)
+![Scatter Petal](Assets/ScatterPlotPetal.png)
 
 # **Scatter plot sepal_length vs sepal_width**
 
@@ -191,7 +191,7 @@ plt.legend(title="Species")
 plt.show()
 ```
 
-![Scatter Sepal](Assets/Pertemuan_2/ScatterPlotSepal.png)
+![Scatter Sepal](Assets/ScatterPlotSepal.png)
 
 # **Distribusi satu fitur (histogram + KDE) per species**
 
@@ -206,7 +206,7 @@ plt.ylabel("Frekuensi")
 plt.show()
 ```
 
-![Distribusi Petal Length](Assets/Pertemuan_2/DistribusiTepalLength.png)
+![Distribusi Petal Length](Assets/DistribusiTepalLength.png)
 
 ## **Distribusi Petal Width**
 
@@ -219,7 +219,7 @@ plt.ylabel("Frekuensi")
 plt.show()
 ```
 
-![Distribusi Petal Width](Assets/Pertemuan_2/DistribusiTepalWidth.png)
+![Distribusi Petal Width](Assets/DistribusiTepalWidth.png)
 
 ## **Distribusi Sepal Length**
 
@@ -232,7 +232,7 @@ plt.ylabel("Frekuensi")
 plt.show()
 ```
 
-![Distribusi Sepal Length](Assets/Pertemuan_2/DistribusiSepalLength.png)
+![Distribusi Sepal Length](Assets/DistribusiSepalLength.png)
 
 ## **Distribusi Sepal Width**
 
@@ -245,7 +245,7 @@ plt.ylabel("Frekuensi")
 plt.show()
 ```
 
-![Distribusi Sepal Width](Assets/Pertemuan_2/DistribusiSepalWidth.png)
+![Distribusi Sepal Width](Assets/DistribusiSepalWidth.png)
 
 # **Boxplot per species**
 
@@ -261,7 +261,7 @@ plt.xticks(rotation=0)
 plt.show()
 ```
 
-![Boxplot Petal Length](Assets/Pertemuan_2/BoxplotPetalLength.png)
+![Boxplot Petal Length](Assets/BoxplotPetalLength.png)
 
 # **Petal Width per species**
 
@@ -275,7 +275,7 @@ plt.xticks(rotation=0)
 plt.show()
 ```
 
-![Boxplot Petal Width](Assets/Pertemuan_2/BoxplotPetalWidth.png)
+![Boxplot Petal Width](Assets/BoxplotPetalWidth.png)
 
 # **Pairplot**
 
@@ -284,7 +284,7 @@ sns.pairplot(df, hue='species')
 plt.show()
 ```
 
-![Pairplot](Assets/Pertemuan_2/Pairplot.png)
+![Pairplot](Assets/Pairplot.png)
 
 # **Implementasi Menggunakan Orange Data Mining**
 
@@ -296,7 +296,7 @@ Selain menggunakan Python, eksplorasi data Iris juga dapat dilakukan dengan **Or
 - Download workflow Orange: [OrangeIrisFlower.ows](Assets/Pertemuan_2/OrangeIrisFlower.ows)
 - Screenshot workflow Orange:
 
-![Workflow Orange Iris](Assets/Pertemuan_2/ScreenshotOrangeIrisFlower.png)
+![Workflow Orange Iris](Assets/ScreenshotOrangeIrisFlower.png)
 
 ## **Struktur Workflow Orange (sesuai file .ows)**
 
